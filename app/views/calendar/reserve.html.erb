@@ -1,5 +1,5 @@
 <h1 align="center">予約</h1>
-<%= form_for @reservation, url: calendar_reserve_path do |f| %>
+<%= form_for @reservation, url: calendar_create_path do |f| %>
   <div align="center">
     <p>
       <%= f.label :name, "お名前" %>
@@ -21,6 +21,6 @@
       <%= f.text_field :course %>
     </p>
 
-    <%= f.submit "登録", formaction: calendar_create_path %>
+    <%= f.submit "登録" %>
   </div>
 <% end %>
